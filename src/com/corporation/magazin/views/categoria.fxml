@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.corporation.magazin.controllers.ControllerCategoria">
+   <children>
+      <Button layoutX="427.0" layoutY="259.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="98.0" text="добавить" />
+      <Button layoutX="427.0" layoutY="294.0" mnemonicParsing="false" onAction="#corect" text="редактировать" />
+      <Button layoutX="427.0" layoutY="331.0" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="98.0" text="удалить" />
+      <TextField fx:id="nameT" layoutX="50.0" layoutY="294.0" prefHeight="25.0" prefWidth="263.0" />
+      <TableView fx:id="CategoriaTable" layoutX="49.0" layoutY="14.0" prefHeight="200.0" prefWidth="498.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="170.0" text="номер №" />
+          <TableColumn fx:id="nameColumn" prefWidth="327.0" text="Наименование" />
+        </columns>
+      </TableView>
+      <Label layoutX="52.0" layoutY="251.0" prefHeight="25.0" prefWidth="243.0" text="введите наименование категории" />
+
+   </children>
+</AnchorPane>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.corporation.magazin.controllers.Controller">
+   <children>
+      <Button layoutX="180.0" layoutY="129.0" mnemonicParsing="false" onAction="#Categoria" prefHeight="25.0" prefWidth="241.0" text="Категории" />
+      <Button layoutX="180.0" layoutY="175.0" mnemonicParsing="false" onAction="#PodCategoria" prefHeight="25.0" prefWidth="241.0" text="Подкатегории" />
+      <Button layoutX="180.0" layoutY="227.0" mnemonicParsing="false" onAction="#Goods" prefHeight="25.0" prefWidth="241.0" text="Товары" />
+      <Button layoutX="180.0" layoutY="280.0" mnemonicParsing="false" onAction="#buyGoods" prefHeight="25.0" prefWidth="241.0" text="Покупка товаров" />
+   </children>
+</AnchorPane>

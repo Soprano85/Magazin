@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorpane" prefHeight="550.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.corporation.magazin.controllers.ControllerProduct">
+   <children>
+      <TableView fx:id="tableview" layoutX="42.0" layoutY="118.0" prefHeight="267.0" prefWidth="603.0">
+        <columns>
+          <TableColumn fx:id="idcolum" prefWidth="38.0" text="id" />
+          <TableColumn fx:id="namecolum" prefWidth="148.0" text="название" />
+            <TableColumn fx:id="descriptioncolumn" prefWidth="214.0" text="описание" />
+            <TableColumn fx:id="pricacolumn" prefWidth="63.0" text="цена" />
+            <TableColumn fx:id="stockcolumn" prefWidth="64.0" text="осталось" />
+            <TableColumn fx:id="categorycolumn" prefWidth="75.0" text="категория" />
+        </columns>
+      </TableView>
+      <Label layoutX="42.0" layoutY="402.0" text="название" />
+      <Label layoutX="42.0" layoutY="430.0" text="описание" />
+      <Label layoutX="42.0" layoutY="459.0" text="цена" />
+      <Label layoutX="42.0" layoutY="491.0" text="осталось" />
+      <Label layoutX="42.0" layoutY="520.0" text="категория" />
+      <TextField fx:id="nameT" layoutX="116.0" layoutY="398.0" prefHeight="25.0" prefWidth="170.0" />
+      <TextField fx:id="descriptionT" layoutX="116.0" layoutY="426.0" prefHeight="25.0" prefWidth="170.0" />
+      <TextField fx:id="priceT" layoutX="116.0" layoutY="455.0" prefHeight="25.0" prefWidth="170.0" />
+      <TextField fx:id="countT" layoutX="116.0" layoutY="487.0" prefHeight="25.0" prefWidth="170.0" />
+      <ComboBox fx:id="podcategoryComboBox" layoutX="116.0" layoutY="516.0" prefHeight="25.0" prefWidth="170.0" />
+      <Button layoutX="475.0" layoutY="418.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="170.0" text="добавить" />
+      <Button layoutX="475.0" layoutY="464.0" mnemonicParsing="false" onAction="#corect" prefHeight="25.0" prefWidth="170.0" text="изменить" />
+      <Button layoutX="475.0" layoutY="508.0" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="170.0" text="удалить" />
+      <TextField fx:id="searchT" layoutX="297.0" layoutY="24.0" prefHeight="25.0" prefWidth="214.0" />
+      <Button layoutX="549.0" layoutY="24.0" mnemonicParsing="false" onAction="#search" prefHeight="25.0" prefWidth="127.0" text="поиск" />
+      <Slider fx:id="priceprice" layoutX="56.0" layoutY="82.0" majorTickUnit="100.0" max="1000.0" minorTickCount="10" prefHeight="17.0" prefWidth="461.0" showTickLabels="true" />
+      <Label layoutX="270.0" layoutY="59.0" prefHeight="17.0" prefWidth="55.0" text="(цена до)" />
+      <Button layoutX="549.0" layoutY="70.0" mnemonicParsing="false" onAction="#filter" prefHeight="25.0" prefWidth="127.0" text="фильтровать" />
+   </children>
+</AnchorPane>

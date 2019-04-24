@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.corporation.magazin.controllers.ControllerPodcaterory">
+   <children>
+      <Button layoutX="427.0" layoutY="226.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="98.0" text="добавить" />
+      <Button layoutX="427.0" layoutY="264.0" mnemonicParsing="false" onAction="#corect" text="редактировать" />
+      <Button layoutX="427.0" layoutY="300.0" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="98.0" text="удалить" />
+      <TextField fx:id="nameT" layoutX="50.0" layoutY="294.0" prefHeight="25.0" prefWidth="263.0" />
+      <TableView fx:id="PodcategoriaTable" layoutX="49.0" layoutY="14.0" prefHeight="200.0" prefWidth="498.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="128.0" text="номер №" />
+          <TableColumn fx:id="nameColumn" prefWidth="227.0" text="наименование" />
+            <TableColumn fx:id="podcatColumn" maxWidth="178.0" prefWidth="142.0" text="подкатегория" />
+        </columns>
+      </TableView>
+      <Label layoutX="52.0" layoutY="251.0" prefHeight="25.0" prefWidth="243.0" text="введите наименование категории" />
+      <ComboBox fx:id="idcombo" layoutX="50.0" layoutY="325.0" prefHeight="25.0" prefWidth="263.0" />
+   </children>
+</AnchorPane>
